@@ -84,7 +84,7 @@ export default function ProductImages({item}) {
                 <button
                     onClick={goPrev}
                     aria-label="Previous image"
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-cyan-500  bg-opacity-70 hover:bg-opacity-100 shadow rounded-full p-2 z-10"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-cyan-500  bg-opacity-70 hover:bg-opacity-100 shadow rounded-full p-2 z-5"
                 >
                     <svg
                         width={24}
@@ -121,7 +121,7 @@ export default function ProductImages({item}) {
                 <button
                     onClick={goNext}
                     aria-label="Next image"
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-cyan-500 bg-opacity-70 hover:bg-opacity-100 shadow rounded-full p-2 z-10"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-cyan-500 bg-opacity-70 hover:bg-opacity-100 shadow rounded-full p-2 z-5"
                 >
                     <svg
                         width={24}

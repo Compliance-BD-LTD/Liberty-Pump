@@ -89,7 +89,7 @@ export const AllProducts = () => {
 
 
         } className='w-full'    >
-            <div className={` h-[550px] w-full overflow-hidden ${location.pathname.startsWith('/dashboard') ? `mt-0` : `-mt-20`}    bg-cyan-500 `}>
+            <div className={` md:h-[550px] w-full overflow-hidden ${location.pathname.startsWith('/dashboard') ? `mt-0` : `md:-mt-20`}    bg-cyan-500 `}>
                 <img loading="lazy" src={Banner || `https://c4.wallpaperflare.com/wallpaper/416/765/276/facebook-cover-night-skyscrapers-city-wallpaper-preview.jpg`} className='h-[550px]  md:w-full max-sm:h-[220px] object-cover brightness-90 ' alt="" />
             </div>
             <Searching search={search} setSearch={setSearch} ></Searching>
@@ -180,7 +180,7 @@ export const AllProducts = () => {
                                 filterProducts.length > 0 ?
 
                                     (
-                                        <section className=' min-h-[600px] space-y-5'>
+                                        <section className=' min-h-[300px] space-y-5'>
 
                                             {/* <div className='max-sm:hidden'>
                                                 <a href="../../public/pdf/NT - 111 FS.pdf" className='btn m-1 w-[150px] text-white bg-cyan-500  rounded-sm'>Catelog</a>
@@ -204,7 +204,7 @@ export const AllProducts = () => {
                                                 </div>
                                             </section>
 
-                                            <div className='text-center'>
+                                            <div className={`text-center ${limit >= filterProducts.length ? 'hidden' : ''} `}  >
                                                 <button disabled={limit >= filterProducts.length} onClick={() => setLimit((prev) => prev + 6)} className={`btn ${limit >= filterProducts.length ? `text-gray-400` : `text-blue-700 hover:bg-blue-700 hover:text-white`}   rounded-md`}> Show More...</button>
                                             </div>
                                         </section>

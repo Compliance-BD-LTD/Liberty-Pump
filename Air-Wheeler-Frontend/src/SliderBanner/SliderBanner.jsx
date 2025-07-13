@@ -46,7 +46,7 @@ export const SliderBanner = () => {
         autoplaySpeed: 3500,
     };
     return (
-        <div className="relative -mt-[50px] ">
+        <div className="relative md:-mt-[50px] ">
 
             {
                 !banners.length == 0 ?
@@ -64,8 +64,8 @@ export const SliderBanner = () => {
                                     banners.map((item, index) => {
 
                                         return (
-                                            <div className="w-full  md:h-screen h-[500px] overflow-hidden " key={index}>
-                                                <img src={item.imageUrl[0]} className="w-full brightness-70 bg-cover  h-full md:h-screen" alt="" />
+                                            <div className="w-full bg-cyan-100 md:h-screen overflow-hidden "  key={index}>
+                                                <img src={item.imageUrl[0]} className="w-full h-full    " alt="" />
                                             </div>
                                         )
                                     })

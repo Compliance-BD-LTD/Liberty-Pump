@@ -175,7 +175,7 @@ export const Navbar = ({ products, categories }) => {
                 </div>
             )}
             {/* Spacer so content below doesn't hide behind navbar */}
-            <div className="h-[60px] z-0"></div>
+            <div className="h-[50px] z-0"></div>
         </div>
     );
 };
