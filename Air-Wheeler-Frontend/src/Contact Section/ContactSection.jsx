@@ -76,7 +76,7 @@ const ContactSection = () => {
                     <div className="bg-white rounded shadow p-8 flex flex-col items-center">
                         <FaEnvelope className="text-cyan-500 text-5xl mb-2 border-2 border-dotted border-yellow-200 rounded-full p-2" />
                         <div className="text-lg font-semibold text-gray-700 mb-1">Email Us</div>
-                        <div className="text-gray-500 text-center">info@libertytools.us</div>
+                        <div className="text-gray-500 text-center">info@libertyairwheel.com</div>
                     </div>
                 </div>
                 {/* Bottom: Map and Form */}

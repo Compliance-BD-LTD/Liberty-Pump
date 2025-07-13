@@ -65,13 +65,13 @@ export const Navbar = ({ products, categories }) => {
                             <label htmlFor="navbar-drawer" className="drawer-button lg:hidden text-cyan-500 text-xl cursor-pointer">☰</label>
                         </div>
                         <div className='cursor-pointer block' onClick={() => navigate('/')}>
-                            {!logo?
+                            {logo?
                                 // ? 
                                 // <p className='text-3xl text-cyan-500 font-semibold'>Air <span className='text-yellow-400'>Wheeler</span></p>
 
                                 (
                                     <div className='w-[120px]'>
-                                        <img src={logoo} alt="" />
+                                        <img src={logo} alt="" />
                                     </div>
                                 )
                                 : <div className='skeleton rounded-sm h-10'></div>

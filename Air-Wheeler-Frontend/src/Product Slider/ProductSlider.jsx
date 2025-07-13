@@ -74,14 +74,14 @@ const ProductSlider = () => {
                     Add our hot products to your weekly lineup
                 </p>
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-700 flex items-center justify-center  space-x-2 md:space-x-5">
-                    <span className="text-cyan-500">Air</span> <span className="text-yellow-400" >Wheel</span>  PRODUCTS
-                    <CountUp enableScrollSpy={true} start={0} end={products &&  products.length} delay={10} >
+                    <span className="text-cyan-500">Air</span> <span className="text-yellow-400" >Wheel </span> <span>PRODUCTS</span> 
+                    {/* <CountUp enableScrollSpy={true} start={0} end={products &&  products.length} delay={10} >
                         {({ countUpRef }) =>
                             <div>
                                 ( <span className="md:text-5xl text-2xl font-semibold text-cyan-500" ref={countUpRef} />+ )
                             </div>
                         }
-                    </CountUp>
+                    </CountUp> */}
                 </h2>
                 <div className="w-16 h-1 bg-cyan-400 mx-auto mt-2 mb-1 rounded" />
             </div>

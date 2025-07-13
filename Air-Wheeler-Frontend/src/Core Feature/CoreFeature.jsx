@@ -41,11 +41,14 @@ export default function CoreFeatures() {
 
                     </p>
                     <br />
-                    <p className="text-gray-200 text-sm font-semibold mb-1 text-center md:text-left">Redefining the Way You Travel</p>
-                    <br />
-                    <p className="text-gray-200 text-sm text-center md:text-left">
-                        Imagine you’re rushing through a crowded airport, your gate is at the other end of the terminal, and your hands are full with your phone and coffee. Instead of dragging a heavy suitcase behind you, you hop onto your <b className="text-yellow-400">Liberty Air spaWheel</b> smart luggage. With the touch of a button, the powerful motor kicks in, gliding you smoothly across the terminal floor. The wide, stable wheels handle every turn with ease, and the smart speed control lets you adjust your pace as you weave through people. You’re riding comfortably, with your essentials safely packed inside the durable, stylish case. Even after a long day of travel, the battery still has power to take you from the terminal to the taxi stand outside. And when you need to stop, the responsive brakes ensure you can slow down safely. Liberty Air Wheel offers you more than just luggage—it’s your travel companion, built for speed, safety, and effortless convenience..
-                    </p>
+                    <span className="hidden md:block">
+                        <p className="text-gray-200 text-sm font-semibold mb-1 text-center md:text-left">Redefining the Way You Travel</p>
+                        <br />
+                        <p className="text-gray-200 text-sm text-center md:text-left">
+                            Imagine you’re rushing through a crowded airport, your gate is at the other end of the terminal, and your hands are full with your phone and coffee. Instead of dragging a heavy suitcase behind you, you hop onto your <b className="text-yellow-400">Liberty Air spaWheel</b> smart luggage. With the touch of a button, the powerful motor kicks in, gliding you smoothly across the terminal floor. The wide, stable wheels handle every turn with ease, and the smart speed control lets you adjust your pace as you weave through people. You’re riding comfortably, with your essentials safely packed inside the durable, stylish case. Even after a long day of travel, the battery still has power to take you from the terminal to the taxi stand outside. And when you need to stop, the responsive brakes ensure you can slow down safely. Liberty Air Wheel offers you more than just luggage—it’s your travel companion, built for speed, safety, and effortless convenience..
+                        </p>
+                    </span>
+
                 </div>
             </div>
 
@@ -71,9 +74,9 @@ export default function CoreFeatures() {
                         Smart <span className="text-cyan-500 font-bold">Handle</span> System
                     </h3>
                     <p className="text-gray-500 mb-2 text-center md:text-left">
-                    The Airwheel features a smart handle system that lets you accelerate, brake, and reverse effortlessly. Imagine rolling your suitcase at the airport: push the handle forward to move, pull it back to stop, and press both handles to reverse. With a top speed of 13 km/h, removable batteries, and an app to track settings, Airwheel simplifies your travels. It’s award-winning and perfect for busy travelers seeking convenience and style!
+                        The Airwheel features a smart handle system that lets you accelerate, brake, and reverse effortlessly. <span className="hidden md:block">Imagine rolling your suitcase at the airport: push the handle forward to move, pull it back to stop, and press both handles to reverse. With a top speed of 13 km/h, removable batteries, and an app to track settings, Airwheel simplifies your travels. It’s award-winning and perfect for busy travelers seeking convenience and style!</span>
                     </p>
-      
+
                     <div className="flex gap-3 mt-4">
 
                         <button className="bg-yellow-400 cursor-pointer text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-600 transition">
@@ -96,10 +99,15 @@ export default function CoreFeatures() {
 
                     </p>
                     <br />
-                    <p className="text-gray-200 text-sm font-bold mb-1 text-center md:text-left">Your Commute, Reimagined</p>
-                    <p className="text-gray-200 text-sm text-center md:text-left">
-                        Cut through traffic and cruise the streets with the Liberty Air Wheel E-Scooter. Lightweight yet powerful, this smart scooter offers a smooth, silent ride with responsive brakes and long-lasting battery life. Perfect for city explorers and daily commuters who want to travel smarter, faster, and greener—without breaking a sweat.
-                    </p>
+
+                    <span className="hidden md:block">
+                        <p className="text-gray-200 text-sm font-bold mb-1 text-center md:text-left">Your Commute, Reimagined</p>
+                        <p className="text-gray-200 text-sm text-center md:text-left">
+                            Cut through traffic and cruise the streets with the Liberty Air Wheel E-Scooter. Lightweight yet powerful, this smart scooter offers a smooth, silent ride with responsive brakes and long-lasting battery life. Perfect for city explorers and daily commuters who want to travel smarter, faster, and greener—without breaking a sweat.
+                        </p>
+                    </span>
+
+
                 </div>
                 <div className="w-full md:w-1/2  rounded-xl  flex justify-center mb-8 md:mb-0">
                     <img

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 const Footer = () => {
   const logo = useSelector((state) => state.AirWheel.logo)
+
   return (
     <footer className="relative w-full bg-cyan-500 mt-12 overflow-hidden">
       {/* Blurred cyan background */}
@@ -12,12 +13,15 @@ const Footer = () => {
         aria-hidden="true"
       />
       {/* Overlay for content */}
-      <div className="relative z-0 max-w-[1340px]  container mx-auto px-6 py-12 lg:py-10 flex flex-col lg:flex-row items-center  gap-10 text-white">
+      <div className="relative z-0 max-w-[1340px]  container mx-auto px-6 py-12 lg:py-10 flex  flex-col   lg:flex-row items-center  gap-10 text-white">
         {/* Logo and Contact */}
-        <div className="flex-1  space-y-5">
+        <div className="  space-y-5  md:w-1/2">
           <div className='cursor-pointer block' onClick={() => navigate('/')}>
-            {!logo
-              ? <p className='text-3xl text-cyan-500 font-semibold'>Air <span className='text-yellow-400'>Wheeler</span></p>
+            {logo
+              ? <div className='w-[120px]'>
+                <img src={logo} alt="" />
+              </div>
+
               : <div className='skeleton rounded-sm h-10'></div>
             }
           </div>
@@ -30,7 +34,7 @@ const Footer = () => {
           <div className="mb-4">
             <span className="font-semibold">Email:</span>{" "}
             <a className="underline text-yellow-300">
-              info@libertytools.us
+              info@libertyairwheel.com
             </a>
           </div>
           {/* Social icons */}
@@ -50,27 +54,31 @@ const Footer = () => {
           </div>
         </div>
         {/* Useful Links */}
-        <div className="flex-1  md:text-center">
-          <h3 className="font-semibold mb-4 text-lg">Useful Links</h3>
-          <ul className="space-y-2">
-            <li><a href="/" className="hover:text-orange-500">Home</a></li>
-            <li><a href="/about" className="hover:text-orange-500">About us</a></li>
-            <li><a href="/services" className="hover:text-orange-500">Services</a></li>
-            <li><a href="/blog" className="hover:text-orange-500">Blog</a></li>
-            <li><a href="/contact" className="hover:text-orange-500">Contact</a></li>
-          </ul>
-        </div>
 
-        <div className="flex-1  md:text-right">
-          <h3 className="font-semibold mb-4 text-lg">Our Resources</h3>
-          <ul className="space-y-2">
-            <li><a href="/" className="hover:text-orange-500">Liberty Equipment</a></li>
-            <li><a href="/about" className="hover:text-orange-500"></a>Liberty Forklift</li>
-            <li><a href="/services" className="hover:text-orange-500">Liberty Power Tools</a></li>
-            <li><a href="/blog" className="hover:text-orange-500">Liberty Pump</a></li>
+        <section className="flex justify-between w-full md:w-1/2 ">
+          <div className=" md:text-center">
+            <h3 className="font-semibold mb-4 text-lg">Useful Links</h3>
+            <ul className="space-y-2">
+              <li><a href="/" className="hover:text-orange-500">Home</a></li>
+              <li><a href="/about" className="hover:text-orange-500">About us</a></li>
+              <li><a href="/services" className="hover:text-orange-500">Services</a></li>
+              <li><a href="/blog" className="hover:text-orange-500">Blog</a></li>
+              <li><a href="/contact" className="hover:text-orange-500">Contact</a></li>
+            </ul>
+          </div>
 
-          </ul>
-        </div>
+          <div className="  md:text-right">
+            <h3 className="font-semibold mb-4 text-lg">Our Resources</h3>
+            <ul className="space-y-2">
+              <li><a href="/" className="hover:text-orange-500">Liberty Equipment</a></li>
+              <li><a href="/about" className="hover:text-orange-500"></a>Liberty Forklift</li>
+              <li><a href="/services" className="hover:text-orange-500">Liberty Power Tools</a></li>
+              <li><a href="/blog" className="hover:text-orange-500">Liberty Pump</a></li>
+
+            </ul>
+          </div>
+        </section>
+
       </div>
       {/* Bottom bar */}
       <div className="relative border-t border-white/20 text-center text-gray-200 py-5 bg-black/30">
