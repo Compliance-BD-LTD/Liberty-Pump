@@ -49,23 +49,33 @@ export const Navbar = ({ products, categories }) => {
     `;
 
     const activeBorder = "border-b-2 border-cyan-500 ";
-    const linkText = `${scrolled? `text-black`  : `text-black`}`
+    const linkText = `${scrolled ? `text-black` : `text-black`}`
 
     return (
         <div className='relative z-10  ' >
-            <nav className={` mx-auto md:h-[50px] px-5 fixed w-full  backdrop-blur-xs  bg-cyan-400/10 
+            <nav className={` mx-auto md:h-[50px] max-sm:py-2  px-5 fixed w-full  backdrop-blur-xs  bg-cyan-400/10 
 
                 `
-                
-                }>
+
+            }>
                 <div className='flex justify-between mx-auto items-center max-w-[1340px]'>
+
+
                     {/* Logo & Drawer */}
                     <div className="flex items-center justify-center space-x-4">
-                        <div className="dropdown">
-                            <label htmlFor="navbar-drawer" className="drawer-button lg:hidden text-cyan-500 text-xl cursor-pointer">☰</label>
+                        <div className="space-x-5 md:hidden">
+                            {admin && isDashboard && (
+                                <label
+                                    htmlFor="dashboard-drawer"
+                                    className="drawer-button text-cyan-500 text-xl lg:hidden"
+                                >
+                                    ☰
+                                </label>
+                            )}
                         </div>
+
                         <div className='cursor-pointer block' onClick={() => navigate('/')}>
-                            {logo?
+                            {logo ?
                                 // ? 
                                 // <p className='text-3xl text-cyan-500 font-semibold'>Air <span className='text-yellow-400'>Wheeler</span></p>
 
@@ -119,16 +129,13 @@ export const Navbar = ({ products, categories }) => {
                             }
                         </ul>
                     </div>
-                    <div className="space-x-5 md:hidden">
-                        {admin && isDashboard && (
-                            <label
-                                htmlFor="dashboard-drawer"
-                                className="drawer-button text-cyan-500 text-xl lg:hidden"
-                            >
-                                ☰
-                            </label>
-                        )}
+
+
+
+                    <div className="space-x-5 md:hidden" >
+                        <label htmlFor="navbar-drawer" className="drawer-button lg:hidden text-cyan-500 text-xl cursor-pointer">☰</label>
                     </div>
+
                 </div>
                 {/* MegaBar SideNavbar */}
                 <SideNavbar categories={categories} />

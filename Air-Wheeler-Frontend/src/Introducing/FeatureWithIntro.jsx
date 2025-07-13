@@ -82,9 +82,9 @@ const features = [
 
 export default function FeatureWithIntro() {
   return (
-    <div className="w-full flex flex-col items-center justify-center py-20">
+    <div className="w-full flex flex-col items-center justify-center md:py-20 py-2   ">
       {/* Features Section */}
-      <div className="w-full max-w-[1340px] mx-auto flex flex-col md:flex-row justify-between items-center  mt-12 mb-8">
+      <div className="w-full max-w-[1340px] mx-auto flex flex-col md:flex-row justify-between items-center mt-5  md:mt-12 mb-8">
         {features.map((f, i) => (
           <div
             key={i}
