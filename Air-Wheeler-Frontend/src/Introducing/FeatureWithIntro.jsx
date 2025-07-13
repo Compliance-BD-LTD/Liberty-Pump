@@ -82,7 +82,7 @@ const features = [
 
 export default function FeatureWithIntro() {
   return (
-    <div className="w-full flex flex-col items-center justify-center md:py-20 py-2   ">
+    <div className="w-full flex flex-col items-center justify-center md:py-5 py-2   ">
       {/* Features Section */}
       <div className="w-full max-w-[1340px] mx-auto flex flex-col md:flex-row justify-between items-center mt-5  md:mt-12 mb-8">
         {features.map((f, i) => (
@@ -116,7 +116,7 @@ export default function FeatureWithIntro() {
         <div className="md:w-1/2 w-full flex flex-col justify-center items-start px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 flex flex-wrap items-center">
             Why Liberty
-            <span className="ml-2 text-cyan-600">Air </span> <span className="ml-2 text-yellow-400">Wheel?</span>
+            <span className="ml-2 text-cyan-600">Air </span> <span className="ml-2 text-orange-500">Wheel?</span>
           </h2>
           <div className="w-16 h-1 bg-cyan-500 mb-4" />
           <p className="text-gray-500 mb-2">

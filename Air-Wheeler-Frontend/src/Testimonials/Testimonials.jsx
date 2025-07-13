@@ -109,9 +109,7 @@ const TestimonialsSlider = () => {
         >
             <div className="w-full mx-auto px-2">
                 <div className="text-center mb-10">
-                    <p className="tracking-widest text-gray-400 mb-1 text-xs uppercase">
-                        Welcome to my personal presentation
-                    </p>
+                   
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-1">
                         WHAT OUR <span className="text-cyan-500">CLIENTS SAY</span>
                     </h2>

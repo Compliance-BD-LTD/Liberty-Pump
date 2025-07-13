@@ -100,7 +100,7 @@ export const ProductCard = ({ item }) => {
           {/* Rating */}
           <div className="flex items-center justify-center mb-3 space-x-1">
             {[1,2,3,4,5].map((_, i) => (
-              <span key={i} className="text-yellow-400 text-lg">&#9733;</span>
+              <span key={i} className="text-orange-500 text-lg">&#9733;</span>
             ))}
            
           </div>

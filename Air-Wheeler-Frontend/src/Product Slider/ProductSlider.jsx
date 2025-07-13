@@ -70,11 +70,9 @@ const ProductSlider = () => {
     return (
         <section className="w-full py-14 max-w-[1340px] mx-auto flex flex-col items-center bg-white">
             <div className="text-center mb-10">
-                <p className="text-gray-400 italic text-lg mb-2">
-                    Add our hot products to your weekly lineup
-                </p>
+              
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-700 flex items-center justify-center  space-x-2 md:space-x-5">
-                    <span className="text-cyan-500">Air</span> <span className="text-yellow-400" >Wheel </span> <span>PRODUCTS</span> 
+                    <span className="text-cyan-500">Air</span> <span className="text-orange-500" >Wheel </span> <span>PRODUCTS</span> 
                     {/* <CountUp enableScrollSpy={true} start={0} end={products &&  products.length} delay={10} >
                         {({ countUpRef }) =>
                             <div>

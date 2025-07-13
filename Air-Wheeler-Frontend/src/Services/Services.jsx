@@ -22,10 +22,10 @@ export const Services = () => {
 
                     <div className=" hidden md:block absolute top-1/2  md:left-10   w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
                         <h1 className="md:text-4xl text-2xl  font-bold text-gray-800 mb-4">
-                            Affordable truck service
+                            Airwheel Service Hub
                         </h1>
                         <p className="md:text-lg text-base md:w-1/2 text-gray-600 mb-6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.
+                            From intelligent scooters to smart luggage, we provide comprehensive service and support to keep your personal mobility devices rolling smooth and smart. Trust us for quality repairs, upgrades, diagnostics, and more.
                         </p>
                         <button className="px-8 py-3  bg-cyan-600 text-white text-lg rounded-md hover:bg-cyan-700 cursor-pointer transition duration-300">
                             Get Service

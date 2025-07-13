@@ -30,7 +30,7 @@ export default function CoreFeatures() {
                 {/* Text Right */}
                 <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-3 ">
                     <h3 className="text-2xl font-semibold text-gray-200 mb-2 text-center md:text-left">
-                        Smart Travel. Effortless Style. <span className="text-yellow-400 font-bold">Ultimate Convenience. </span>
+                        Smart Travel. Effortless Style. <span className="text-white font-bold">Ultimate Convenience. </span>
 
 
 
@@ -45,7 +45,7 @@ export default function CoreFeatures() {
                         <p className="text-gray-200 text-sm font-semibold mb-1 text-center md:text-left">Redefining the Way You Travel</p>
                         <br />
                         <p className="text-gray-200 text-sm text-center md:text-left">
-                            Imagine you’re rushing through a crowded airport, your gate is at the other end of the terminal, and your hands are full with your phone and coffee. Instead of dragging a heavy suitcase behind you, you hop onto your <b className="text-yellow-400">Liberty Air spaWheel</b> smart luggage. With the touch of a button, the powerful motor kicks in, gliding you smoothly across the terminal floor. The wide, stable wheels handle every turn with ease, and the smart speed control lets you adjust your pace as you weave through people. You’re riding comfortably, with your essentials safely packed inside the durable, stylish case. Even after a long day of travel, the battery still has power to take you from the terminal to the taxi stand outside. And when you need to stop, the responsive brakes ensure you can slow down safely. Liberty Air Wheel offers you more than just luggage—it’s your travel companion, built for speed, safety, and effortless convenience..
+                            Imagine you’re rushing through a crowded airport, your gate is at the other end of the terminal, and your hands are full with your phone and coffee. Instead of dragging a heavy suitcase behind you, you hop onto your <b className="text-white">Liberty Air spaWheel</b> smart luggage. With the touch of a button, the powerful motor kicks in, gliding you smoothly across the terminal floor. The wide, stable wheels handle every turn with ease, and the smart speed control lets you adjust your pace as you weave through people. You’re riding comfortably, with your essentials safely packed inside the durable, stylish case. Even after a long day of travel, the battery still has power to take you from the terminal to the taxi stand outside. And when you need to stop, the responsive brakes ensure you can slow down safely. Liberty Air Wheel offers you more than just luggage—it’s your travel companion, built for speed, safety, and effortless convenience..
                         </p>
                     </span>
 
@@ -79,7 +79,7 @@ export default function CoreFeatures() {
 
                     <div className="flex gap-3 mt-4">
 
-                        <button className="bg-yellow-400 cursor-pointer text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-600 transition">
+                        <button className="bg-cyan-500 hover:border-2 hover:border-cyan-500 cursor-pointer text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-cyan-500 transition">
                             READ MORE
                         </button>
                     </div>
@@ -91,7 +91,7 @@ export default function CoreFeatures() {
                 {/* Text Right */}
                 <div className="w-full md:w-1/2 flex flex-col items-center md:items-start p-3">
                     <h3 className="text-2xl font-semibold text-gray-200 mb-2 text-center md:text-left">
-                        Zip Through the City with  E-Scooter <span className="text-yellow-200 font-bold">Liberty Air Wheel</span>
+                        Zip Through the City with  E-Scooter <span className="font-bold">Liberty Air Wheel</span>
                     </h3>
                     <p className="text-gray-200 mb-2 text-center md:text-left">
                         Effortless, eco-friendly, and built for the fast-moving urban lifestyle. The Liberty Air Wheel E-Scooter delivers smooth acceleration, smart controls, and a durable frame designed for daily commutes. Whether you're heading to work, exploring the city, or just enjoying the ride, this scooter combines speed, safety, and style in one sleek package.

@@ -77,7 +77,7 @@ export const Navbar = ({ products, categories }) => {
                         <div className='cursor-pointer block' onClick={() => navigate('/')}>
                             {logo ?
                                 // ? 
-                                // <p className='text-3xl text-cyan-500 font-semibold'>Air <span className='text-yellow-400'>Wheeler</span></p>
+                                // <p className='text-3xl text-cyan-500 font-semibold'>Air <span className='text-orange-500'>Wheeler</span></p>
 
                                 (
                                     <div className='w-[120px]'>

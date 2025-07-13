@@ -24,7 +24,7 @@ const StorySection = () => {
           </div>
           <div data-aos='fade-left' data-aos-duration="1500" className="w-full ">
             <h2 className="text-3xl font-bold text-cyan-500 mb-4">
-              History of <span className="text-yellow-400">Liberty Air Wheel</span>
+              History of <span className="text-orange-500">Liberty Air Wheel</span>
             </h2>
             <p className="text-gray-700 text-base mb-6">
               Liberty Air Wheel was founded with the vision to create smart
@@ -52,7 +52,7 @@ const StorySection = () => {
           </div>
           <div data-aos='fade-down' data-aos-duration="1500" className="md:w-1/2  w-full">
             <h2 className="text-3xl font-bold text-cyan-500 mb-4">
-              Why Choose <span className="text-yellow-400">Liberty Air Wheel</span>?
+              Why Choose <span className="text-orange-500">Liberty Air Wheel</span>?
             </h2>
             <p className="text-gray-700 text-base mb-6">
               At Liberty Air Wheel, we are committed to offering our customers
