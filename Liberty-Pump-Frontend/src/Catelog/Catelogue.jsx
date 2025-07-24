@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { SendCatelogue } from "./sendCatelogue"
 
 
+
+
 export const Catelogue = () => {
     
     return (
@@ -27,10 +29,8 @@ export const Catelogue = () => {
                                     
                                 </div>
 
+         
                                 <SendCatelogue></SendCatelogue>
-
-                                
-                                
 
                             </section>
 
