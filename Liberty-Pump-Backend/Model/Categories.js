@@ -5,6 +5,7 @@ const Schema=mongoose.Schema
 const CategorySchema=Schema({
 
     name:String,
+    subCategory:[String],
     imageUrl:[String],
     bannerImgUrl:[String],
     

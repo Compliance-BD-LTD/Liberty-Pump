@@ -9,6 +9,7 @@ const { Banners } = require("../Model/Banners")
 const { Blogs } = require("../Model/Blogs")
 const { Services } = require("../Model/services")
 const { Certificates } = require("../Model/certificates")
+const { deleteImage } = require("../Functions/helperFunctions")
 
 const getProducts = async (req, res) => {
 
@@ -69,7 +70,7 @@ const getCertificate = async (req, res) => {
         const data = await Certificates.find({}).lean()
         if (data) {
             res.send({
-                data:data
+                data: data
             })
         }
 
@@ -81,6 +82,7 @@ const getCertificate = async (req, res) => {
 
 
 }
+
 
 const businessProducts = async (req, res) => {
     try {
@@ -473,6 +475,7 @@ const uploadBanner = async (req, res) => {
 const deleteBanner = async (req, res) => {
     try {
         const { id } = req.body
+        const search = await Banners.find({ _id: id }).lean()
 
         const result = await Banners.deleteOne({ _id: id })
         if (result) {
@@ -494,7 +497,7 @@ const addCategory = async (req, res) => {
     try {
 
         const files = req.files
-        const name = req.body.name
+        const { name, subCategory } = req.body
 
         const search = await Categories.find({ name: name }).lean()
         if (search.length > 0) {
@@ -506,11 +509,13 @@ const addCategory = async (req, res) => {
 
         const data = {
             name,
+            subCategory,
             imageUrl: '',
             bannerImgUrl: ''
         }
         data.imageUrl = await uploadImages(files.image)
         data.bannerImgUrl = await uploadImages(files.bannerImage)
+
 
 
 
@@ -590,6 +595,8 @@ const addCertificate = async (req, res) => {
 
 }
 
+
+
 const deleteCertificate = async (req, res) => {
     try {
 
@@ -599,6 +606,12 @@ const deleteCertificate = async (req, res) => {
         const search = await Certificates.find({ _id: id }).lean()
         if (search.length > 0) {
 
+            const delelteImage = await delelteImage(search[0].imageUrl)
+            if (!delelteImage) {
+                return res.status(401).send({
+                    'message': 'Error Deleting Image'
+                })
+            }
             const dlt = await Certificates.deleteOne({ _id: id })
             if (dlt) {
                 const data = await Certificates.find({}).lean()
@@ -632,7 +645,14 @@ const deleteCategory = async (req, res) => {
 
         const search = await Categories.find({ _id: id }).lean()
         if (search.length > 0) {
+            const deleteImage1 = await deleteImage(search[0].imageUrl)
+            const deleteImage2 = await deleteImage(search[0].bannerImgUrl)
 
+            if (!deleteImage1 || !deleteImage2) {
+                return res.status(401).send({
+                    'message': 'Error Deleting Image'
+                })
+            }
             const dlt = await Categories.deleteOne({ _id: id })
             if (dlt) {
                 const data = await Categories.find({}).lean()
@@ -944,5 +964,5 @@ const deleteService = async (req, res) => {
 
 
 module.exports = {
-    deleteCertificate,addCertificate, businessProducts, deleteService, updateService, getServices, addService, deleteBlog, getBlogs, AddBlog, deleteBanner, uploadBanner, getBanners, pdfUpload, getLogo, downloadPdfFiles, getProducts, addProduct, deleteProduct, getCategories,getCertificate, addCategory, deleteCategory, updateProduct, updateCategory
+    deleteCertificate, addCertificate, businessProducts, deleteService, updateService, getServices, addService, deleteBlog, getBlogs, AddBlog, deleteBanner, uploadBanner, getBanners, pdfUpload, getLogo, downloadPdfFiles, getProducts, addProduct, deleteProduct, getCategories, getCertificate, addCategory, deleteCategory, updateProduct, updateCategory
 }

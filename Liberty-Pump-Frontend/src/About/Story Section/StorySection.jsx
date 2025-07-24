@@ -14,7 +14,7 @@ const StorySection = () => {
     <section className="w-full py-14 bg-gray-100">
       <div className="max-w-[1340px] mx-auto px-4">
         {/* History Section */}
-        <div   className="flex flex-col md:gap-10 md:flex-row items-center mb-12">
+        <div   className="flex flex-col md:gap-10 md:flex-row mb-12">
           <div data-aos='fade-right' data-aos-duration="1500" className="w-full mb-8 md:mb-0">
             <img
               src={officeBuilding}
@@ -22,7 +22,7 @@ const StorySection = () => {
               className="w-full h-auto rounded-lg"
             />
           </div>
-          <div data-aos='fade-left' data-aos-duration="1500" className="w-full ">
+          <div data-aos='fade-down' data-aos-duration="1500" className="w-full ">
             <h2 className="text-3xl font-bold text-orange-500 mb-4">
               History of <span className="text-orange-500">Liberty Pump</span>
             </h2>
