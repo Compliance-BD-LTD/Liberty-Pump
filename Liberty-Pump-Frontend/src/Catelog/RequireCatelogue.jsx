@@ -4,7 +4,7 @@ import { useOutletContext } from 'react-router';
 import Swal from 'sweetalert2';
 import { socket } from '../Socket/socket';
 
-export const SendCatelogue = () => {
+export const RequireCatelogue = () => {
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
     const [cateLogueName, setCatelogueName] = useState('')

@@ -1,6 +1,7 @@
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { SendCatelogue } from "./sendCatelogue"
+import { RequireCatelogue } from "./RequireCatelogue"
+
 
 
 
@@ -29,9 +30,7 @@ export const Catelogue = () => {
                                     
                                 </div>
 
-         
-                                <SendCatelogue></SendCatelogue>
-
+                            <RequireCatelogue></RequireCatelogue>
                             </section>
 
                         )
