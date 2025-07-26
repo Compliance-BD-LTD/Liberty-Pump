@@ -9,7 +9,7 @@ import { useLocation, useOutletContext } from 'react-router'
 import { capitalizeWords } from '../Functions/functions'
 import { ProductUpload } from '../Dashboard/FileUpload/ProductUpload'
 import { ProductCard } from '../Product Card/ProductCard'
-import Banner from "../assets/image/Banner Image/All Product Banner.jpg"
+import Banner from "../assets/images/banner/All Product Banner.jpg"
 import { Searching } from '../Searching/Searching';
 
 export const AllProducts = () => {

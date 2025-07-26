@@ -53,7 +53,7 @@ export const Navbar = ({ products, categories }) => {
 
     return (
         <div className='relative z-10  ' >
-            <nav className={` mx-auto md:h-[50px] max-sm:py-2  px-5 fixed w-full backdrop-blur-xs   bg-white/1 
+            <nav className={` mx-auto md:h-[50px] max-sm:py-2  px-5 fixed w-full backdrop-blur-xs ${location.pathname=='/contact'? `bg-white` : `bg-white/1 `}  
 
                 `
 

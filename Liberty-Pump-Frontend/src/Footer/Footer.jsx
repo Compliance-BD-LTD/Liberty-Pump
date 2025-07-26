@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="mb-4">
             <span className="font-semibold">Email:</span>{" "}
             <a className="underline text-yellow-300">
-              info@libertyairwheel.com
+              info@libertypump.com
             </a>
           </div>
           {/* Social icons */}
