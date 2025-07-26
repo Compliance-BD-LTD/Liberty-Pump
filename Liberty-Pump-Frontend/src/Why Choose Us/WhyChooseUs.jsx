@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-10 text-gray-800">Why <span className="text-orange-500">Choose</span> Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((card, index) => (
+          {cards && cards.map((card, index) => (
             <div
               key={index}
               className="relative group bg-sky-50 rounded-md cursor-pointer shadow-md w-[270px] h-[250px] overflow-hidden transition-all duration-500 hover:shadow-xl"

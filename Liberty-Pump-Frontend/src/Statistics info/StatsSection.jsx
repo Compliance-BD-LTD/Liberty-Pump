@@ -12,7 +12,7 @@ export default function StatsSection() {
   return (
     <section className="w-full py-12 bg-gray-100   border-gray-200">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 py-20 sm:grid-cols-4 gap-8 text-center">
-        {stats.map((stat, index) => (
+        {stats && stats.map((stat, index) => (
 
 
 

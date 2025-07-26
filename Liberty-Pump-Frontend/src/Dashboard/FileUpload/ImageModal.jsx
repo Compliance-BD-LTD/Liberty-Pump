@@ -121,7 +121,7 @@ export const ImageModal = () => {
 
                             <div className='space-y-2'>
                                 <p className='font-semibold'>Sub Category:</p>
-                                {extraInputs.map((value, index) => (
+                                {extraInputs && extraInputs.map((value, index) => (
                                     <div key={index} className='flex items-center space-x-2'>
                                         <input
                                             type="text"

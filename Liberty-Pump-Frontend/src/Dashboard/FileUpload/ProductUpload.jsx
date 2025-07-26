@@ -103,7 +103,7 @@ export const ProductUpload = () => {
             formData.append('pdf', pdfFile); // ✅ Key matches multer field
         }
 
-        const transformedParameter = parameter.map(({ key, value }) => ({ [key]: value }));
+        const transformedParameter = parameter && parameter.map(({ key, value }) => ({ [key]: value }));
 
 
         const info = {
@@ -113,7 +113,7 @@ export const ProductUpload = () => {
             category,
             parameter: transformedParameter,
 
-            pdf: pdfs.filter(p => p.key).map(pdf => ({ [pdf.key]: "" }))
+            pdf: pdfs && pdfs.filter(p => p.key).map(pdf => ({ [pdf.key]: "" }))
         };
 
 
@@ -179,7 +179,7 @@ export const ProductUpload = () => {
 
                             <div className='space-y-2'>
                                 <p>Add <span className='font-semibold'>Specification</span> Info:</p>
-                                {parameter.map((spec, index) => (
+                                {parameter && parameter.map((spec, index) => (
                                     <div key={index} className='flex space-x-3 items-center'>
                                         <input
                                             type="text"
@@ -256,7 +256,7 @@ export const ProductUpload = () => {
 
 
 
-                            {pdfs.map((pdf, idx) => (
+                            {pdfs && pdfs.map((pdf, idx) => (
                                 <div key={idx} className="flex items-center gap-2">
                                     <section>
 
